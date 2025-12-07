@@ -1,0 +1,267 @@
+package com.entity.vo;
+
+import com.entity.KaifajihuashenqingEntity;
+
+import com.baomidou.mybatisplus.annotations.TableName;
+import java.util.Date;
+import org.springframework.format.annotation.DateTimeFormat;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
+import java.io.Serializable;
+ 
+
+/**
+ * 开发计划申请
+ * @author 
+ * @email 
+ * @date 2024-10-31 16:18:21
+ */
+public class KaifajihuashenqingVO  implements Serializable {
+	private static final long serialVersionUID = 1L;
+
+	 			
+	/**
+	 * 林地类型
+	 */
+	
+	private String lindileixing;
+		
+	/**
+	 * 区域
+	 */
+	
+	private String quyu;
+		
+	/**
+	 * 林地面积
+	 */
+	
+	private String lindimianji;
+		
+	/**
+	 * 林地图片
+	 */
+	
+	private String linditupian;
+		
+	/**
+	 * 申请时间
+	 */
+		
+	@JsonFormat(locale="zh", timezone="GMT+8", pattern="yyyy-MM-dd HH:mm:ss")
+	@DateTimeFormat 
+	private Date shenqingshijian;
+		
+	/**
+	 * 申请材料
+	 */
+	
+	private String shenqingcailiao;
+		
+	/**
+	 * 开发进度
+	 */
+	
+	private String kaifajindu;
+		
+	/**
+	 * 林业局名称
+	 */
+	
+	private String linyejumingcheng;
+		
+	/**
+	 * 企业名称
+	 */
+	
+	private String qiyemingcheng;
+		
+	/**
+	 * 是否审核
+	 */
+	
+	private String sfsh;
+		
+	/**
+	 * 审核回复
+	 */
+	
+	private String shhf;
+				
+	
+	/**
+	 * 设置：林地类型
+	 */
+	 
+	public void setLindileixing(String lindileixing) {
+		this.lindileixing = lindileixing;
+	}
+	
+	/**
+	 * 获取：林地类型
+	 */
+	public String getLindileixing() {
+		return lindileixing;
+	}
+				
+	
+	/**
+	 * 设置：区域
+	 */
+	 
+	public void setQuyu(String quyu) {
+		this.quyu = quyu;
+	}
+	
+	/**
+	 * 获取：区域
+	 */
+	public String getQuyu() {
+		return quyu;
+	}
+				
+	
+	/**
+	 * 设置：林地面积
+	 */
+	 
+	public void setLindimianji(String lindimianji) {
+		this.lindimianji = lindimianji;
+	}
+	
+	/**
+	 * 获取：林地面积
+	 */
+	public String getLindimianji() {
+		return lindimianji;
+	}
+				
+	
+	/**
+	 * 设置：林地图片
+	 */
+	 
+	public void setLinditupian(String linditupian) {
+		this.linditupian = linditupian;
+	}
+	
+	/**
+	 * 获取：林地图片
+	 */
+	public String getLinditupian() {
+		return linditupian;
+	}
+				
+	
+	/**
+	 * 设置：申请时间
+	 */
+	 
+	public void setShenqingshijian(Date shenqingshijian) {
+		this.shenqingshijian = shenqingshijian;
+	}
+	
+	/**
+	 * 获取：申请时间
+	 */
+	public Date getShenqingshijian() {
+		return shenqingshijian;
+	}
+				
+	
+	/**
+	 * 设置：申请材料
+	 */
+	 
+	public void setShenqingcailiao(String shenqingcailiao) {
+		this.shenqingcailiao = shenqingcailiao;
+	}
+	
+	/**
+	 * 获取：申请材料
+	 */
+	public String getShenqingcailiao() {
+		return shenqingcailiao;
+	}
+				
+	
+	/**
+	 * 设置：开发进度
+	 */
+	 
+	public void setKaifajindu(String kaifajindu) {
+		this.kaifajindu = kaifajindu;
+	}
+	
+	/**
+	 * 获取：开发进度
+	 */
+	public String getKaifajindu() {
+		return kaifajindu;
+	}
+				
+	
+	/**
+	 * 设置：林业局名称
+	 */
+	 
+	public void setLinyejumingcheng(String linyejumingcheng) {
+		this.linyejumingcheng = linyejumingcheng;
+	}
+	
+	/**
+	 * 获取：林业局名称
+	 */
+	public String getLinyejumingcheng() {
+		return linyejumingcheng;
+	}
+				
+	
+	/**
+	 * 设置：企业名称
+	 */
+	 
+	public void setQiyemingcheng(String qiyemingcheng) {
+		this.qiyemingcheng = qiyemingcheng;
+	}
+	
+	/**
+	 * 获取：企业名称
+	 */
+	public String getQiyemingcheng() {
+		return qiyemingcheng;
+	}
+				
+	
+	/**
+	 * 设置：是否审核
+	 */
+	 
+	public void setSfsh(String sfsh) {
+		this.sfsh = sfsh;
+	}
+	
+	/**
+	 * 获取：是否审核
+	 */
+	public String getSfsh() {
+		return sfsh;
+	}
+				
+	
+	/**
+	 * 设置：审核回复
+	 */
+	 
+	public void setShhf(String shhf) {
+		this.shhf = shhf;
+	}
+	
+	/**
+	 * 获取：审核回复
+	 */
+	public String getShhf() {
+		return shhf;
+	}
+			
+}

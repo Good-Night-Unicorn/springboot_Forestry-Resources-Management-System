@@ -1,0 +1,40 @@
+package com.entity.view;
+
+import com.entity.LinyeziyuanEntity;
+
+import com.baomidou.mybatisplus.annotations.TableName;
+import org.apache.commons.beanutils.BeanUtils;
+import java.lang.reflect.InvocationTargetException;
+import java.math.BigDecimal;
+
+import java.io.Serializable;
+import com.utils.EncryptUtil;
+ 
+
+/**
+ * 林业资源
+ * 后端返回视图实体辅助类   
+ * （通常后端关联的表或者自定义的字段需要返回使用）
+ * @author 
+ * @email 
+ * @date 2024-10-31 16:18:21
+ */
+@TableName("linyeziyuan")
+public class LinyeziyuanView  extends LinyeziyuanEntity implements Serializable {
+	private static final long serialVersionUID = 1L;
+
+	public LinyeziyuanView(){
+	}
+ 
+ 	public LinyeziyuanView(LinyeziyuanEntity linyeziyuanEntity){
+ 	try {
+			BeanUtils.copyProperties(this, linyeziyuanEntity);
+		} catch (IllegalAccessException | InvocationTargetException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+ 		
+	}
+
+
+}
